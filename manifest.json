@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "fulscreen-ish",
+  "version": "1.0.0",
+
+  "description": "Double click HTML videos to enable windowed fullscreen",
+
+  "content_scripts": [{
+      "all_frames": true,
+      "matches": ["<all_urls>"],
+      "js": ["cinema.js"]
+  }]
+}
